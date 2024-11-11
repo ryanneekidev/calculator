@@ -1,0 +1,50 @@
+body{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.rootContainer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.screen::before{
+    content: "\00A0";
+}
+
+.screen{
+    width: 380px;
+    height: 75px;
+    background-color: lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    justify-content: end;
+}
+
+.calculatorContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: darkgrey;
+    width: 400px;
+    height: 500px;
+    align-items: center;
+}
+
+.keypad{
+    display: grid;
+    flex-wrap: wrap;
+    min-width: 380px;
+    max-width: 380px;
+    min-height: 395px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: darkgreen;
+}
+
+.key, .keyAdd, .keySub, .keyMult, .keyDiv, .keyOper{
+    border: none;
+    background-color: olive;
+    color: white;
+    font-size: large;
+    margin: 10px;
+}
